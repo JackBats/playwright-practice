@@ -1,6 +1,6 @@
 export const usersList = {
     mainUser: {
-        email: 'qa.test.002@gmail.com',
+        email: 'qa1.test.001@gmail.com',
         password: 'ZSgeVQhuU3qkvlG'
     }
 };
