@@ -41,9 +41,18 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+
+    {
+      name: 'setup',
+      use: { ...devices['Desktop Chrome'] },
+      testMatch: '*/setup/*.spec.ts',
+    },
+
     {
       name: 'smoke',
       use: { ...devices['Desktop Chrome'] },
+      testIgnore: '*/setup/*.spec.ts',
+      dependencies: ['setup'],
     },
 
     // {
