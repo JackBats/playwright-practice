@@ -17,8 +17,6 @@ export default class GaragePage extends BasePage {
         await this.page.waitForURL('panel/garage');
         await this.garageTitle.isVisible();
         await this.emptyGarageMessage.isVisible();
-       
-
     }
 
     async visitGaragePage(): Promise<void> {
