@@ -6,5 +6,6 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 .env
-/test-data/states
 .DS_Store
+/test-data/
+test-data/states/mainUserState.json

@@ -10,7 +10,7 @@ export default class GaragePage extends BasePage {
     private readonly mileageField: Locator = this.page.locator('//input[@id="addCarMileage"]');
     private readonly submitAddingCarButton: Locator = this.page.locator('//app-add-car-modal//button[contains(@class, "btn-primary")]');
     private readonly allAddedCarNames: Locator = this.page.locator('//p[contains(@class,"car_name")]');
-    private readonly editCarButton: Locator = this.page.locator('//button[contains(@class, "car_edit")]');
+    private readonly editCarButton: Locator = this.page.locator('(//button[contains(@class, "car_edit")])[1]');
 
 
     async verifyGaragePageIsOpened(): Promise<void> {
