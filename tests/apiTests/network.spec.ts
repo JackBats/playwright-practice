@@ -93,7 +93,6 @@ test.describe("Postitve tests", () => {
       expect(response.status()).toBe(201);
       const responseBody = await response.json();
 
-      console.log(responseBody);
       expect(responseBody.data.carBrandId).toBe(carToAdd.carBrandId);
       expect(responseBody.data.carModelId).toBe(carToAdd.carModelId);
       expect(responseBody.data.mileage).toBe(carToAdd.mileage);
@@ -117,7 +116,6 @@ test.describe("Postitve tests", () => {
       });
 
       const responseBody = await response.json();
-      console.log(responseBody);
       expect(response.status()).toBe(201);
 
       const carId = responseBody.data.id;

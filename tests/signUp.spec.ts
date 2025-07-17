@@ -180,14 +180,11 @@ test.describe('Sign Up Form Tests', () => {
       await signUpForm.verifyErrorIsNotDisplayed('Confirm Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter');
     });
 
-    test('Check the Register button is enabled when all fields are filled with valid data', async () => {
-      await signUpForm.fillSignUpForm(testData.validName, testData.validLastName, testData.validEmail, testData.validPassword, testData.validPassword);
-      await expect(signUpForm['signUpButton']).toBeEnabled();
-    });
-
     test('Check the Sign Up form can be submitted with valid data', async () => {
       await signUpForm.fillSignUpForm(testData.validName, testData.validLastName, testData.validEmail, testData.validPassword, testData.validPassword);
+      await expect(signUpForm['signUpButton']).toBeEnabled();
       await garagePage.verifyGaragePageIsOpened();
     });
   });  
 });
+

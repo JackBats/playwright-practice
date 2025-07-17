@@ -46,6 +46,7 @@ export default defineConfig({
       name: 'setup',
       use: { ...devices['Desktop Chrome'] },
       testMatch: '*/setup/*.spec.ts',
+      workers: 1,
     },
 
     {
