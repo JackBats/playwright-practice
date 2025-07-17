@@ -10,6 +10,8 @@ jobs:
       BASE_URL_PROD: ${{secrets.BASE_URL_PROD}}
       HTTP_CREDENTIALS_USERNAME: ${{secrets.HTTP_CREDENTIALS_USERNAME}}
       HTTP_CREDENTIALS_PASSWORD: ${{secrets.HTTP_CREDENTIALS_PASSWORD}}
+      TEST_USER_EMAIL: ${{secrets.TEST_USER_EMAIL}}
+      TEST_USER_PASSWORD: ${{secrets.TEST_USER_PASSWORD}}
 
     steps:
       - uses: actions/checkout@v4
