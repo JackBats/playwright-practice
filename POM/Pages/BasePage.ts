@@ -15,7 +15,7 @@ export default class BasePage {
   }
 
   async verifyFieldHasRedBorder(field: Locator): Promise<void> {
-    await this.page.waitForTimeout(160);
+    await this.page.waitForTimeout(200);
     const borderColor = await field.evaluate((el) => getComputedStyle(el).borderColor);
     expect(borderColor).toBe("rgb(220, 53, 69)"); // #dc3545 as rgb
   }
